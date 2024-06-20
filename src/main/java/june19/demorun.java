@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebElement;
 
 public class demorun {
 
@@ -22,13 +23,13 @@ public class demorun {
 		//find element by tagname
 		driver.findElement(By.id("login")).sendKeys("nivethasivakumar1998@gmail.com");
 		//find element by attribute
-		driver.findElement(By.name("password")).sendKeys("Nivetha@1998");
+		driver.findElement(By.name("password")).sendKeys("Nivetha@12398");
 		//find element by classname
 		//driver.findElement(By.className("btn-primary")).click();
 		//find element by cnstructing CSS selector using classname - tagname.classname
 	    driver.findElement(By.cssSelector("button.btn")).click();
 		//driver.findElement(By.className("alert-danger")).isDisplayed();
-	    System.out.println(driver.findElement(By.cssSelector("p.alert")).getText());
+	    //System.out.println(driver.findElement(By.cssSelector("p.alert")).getText());
 	    driver.findElement(By.linkText("Reset Password")).click();
 	    driver.findElement(By.cssSelector("input.form-control")).sendKeys("nivethasivakumar1998@gmail.com");
 	    driver.findElement(By.cssSelector("button.btn-primary")).click();
@@ -38,6 +39,8 @@ public class demorun {
 		//find element by attribute
 		driver.findElement(By.name("password")).sendKeys("Nivetha@98");
 		driver.findElement(By.className("btn")).click();
+		//driver.findElement(By.xpath("//*button[@class='btn]")).click();
+	
 	    
 	}
 
